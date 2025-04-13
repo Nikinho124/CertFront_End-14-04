@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boxeo Mortal </title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      body {
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+      .navbar {
+        background-color: #bd2130;
+      }
+
+      .navbar-nav .nav-link {
+        color: #ffffff !important;
+      }
+
+      .navbar-nav .nav-link:hover {
+        color: #ffc107 !important;
+      }
+
+      .carousel-item img {
+        height: 85vh;
+        object-fit: cover;
+      }
+
+      .carousel-caption {
+        color: #ffffff;
+      }
+
+      .carousel-caption h1,
+      .carousel-caption p {
+        color: #ffffff;
+      }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        filter: invert(0%);
+      }
+
+      .text-bg-primary {
+        background-color: #bd2130 !important;
+        color: #ffffff;
+      }
+
+      .featurette-divider {
+        border-top: 2px solid #bd2130;
+      }
+
+      .rounded-circle {
+        border: 4px solid #bd2130;
+      }
+
+      footer {
+        background-color: #f8f9fa;
+        color: #000000;
+      }
+
+      footer a {
+        color: #000000;
+      }
+
+      footer a:hover {
+        color: #bd2130;
+      }
+
+      .btn-primary {
+        background-color: #bd2130;
+        border-color: #bd2130;
+      }
+
+      .btn-primary:hover {
+        background-color: #8a1a24;
+        border-color: #8a1a24;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md sticky-top border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="#">Boxeo Mortal</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#profesores">Nuestros Profesores</a></li>
+            <li class="nav-item"><a class="nav-link" href="indexpago.html">Planes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#horarios">Contactos</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CARRUSEL -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagenes/Ring2.jpg" class="d-block w-100" alt="Boxeo 1">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Bienvenido a Boxeo Mortal</h1>
+              <p>Forjamos campeones, un golpe a la vez.</p>
+              <p><a class="btn btn-primary" href="#profesores">Nuestros Profesores</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/boxeoCab.jfif" class="d-block w-100" alt="Boxeo 2">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Entrena con los mejores</h1>
+              <p>Metodología única para tu crecimiento.</p>
+              <p><a class="btn btn-primary" href="indexpago.html">Ver Planes</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes/5bc7fd2ee.jpg" class="d-block w-100" alt="Boxeo 3">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Supera tus límites</h1>
+              <p>Tu transformación empieza hoy.</p>
+              <p><a class="btn btn-primary" href="indexProductos.html">Mas De Nosotros</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- SECCION PROFESORES -->
+    <div id="profesores" class="container marketing text-center my-5">
+      <h2 class="mb-4">Nuestros Profesores</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="./imagenes/rolandon.jpg" class="rounded-circle" width="140" height="140" alt="Boxeador 1">
+          <h4>El Maestro</h4>
+          <p>30 años de experiencia en competencias internacionales.</p>
+        </div>
+        <div class="col-lg-4">
+          <img src="./imagenes/Entrenador2.jpg" class="rounded-circle" width="140" height="140" alt="Boxeador 2">
+          <h4>El Relampago</h4>
+          <p>Velocidad imbatible y técnica avanzada.</p>
+        </div>
+        <div class="col-lg-4">
+          <img src="./imagenes/EntrenadorC.jpg" class="rounded-circle" width="140" height="140" alt="Boxeador 3">
+          <h4>El Marpe</h4>
+          <p>Disciplina, pasión y fortaleza mental.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEATURETTES -->
+    <hr class="featurette-divider">
+
+    <div id="ubicacion" class="row featurette container">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Nuestra Ubicación <span class="text-muted">en el gran Concepción.</span></h2>
+        <p class="lead">Encuéntranos en Barros Arana 160, Bío Bío.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="./imagenes/BoxAthan.png" class="img-fluid mx-auto" alt="Mapa ubicación">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div id="horarios" class="row featurette container">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Nuestros Horarios <span class="text-muted">flexibles.</span></h2>
+        <p class="lead">Mañana y tarde para que entrenes cuando quieras.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="./imagenes/horario.png" class="img-fluid mx-auto" alt="Horarios">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- FOOTER -->
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+          <small class="d-block mb-3">&copy; 2025 Boxeo Mortal</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Contacto</h5>
+          <p>+569 4087 1949</p>
+          <p>boxeomortal@concepcion.cl</p>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Redes Sociales</h5>
+          <ul class="list-unstyled text-small">
+            <li><a href="https://facebook.com/ClubdeBoxAthan">Facebook</a></li>
+            <li><a href="https://instagram.com/boxeoathanconce/profilecard/?igsh=cHlrMHhyeDlrZnZz" target="_blank">Instagram</a></li>
+            <li><a href="https://youtube.com/watch?v=E7qsyls_DgI">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
